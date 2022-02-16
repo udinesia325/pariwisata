@@ -1,0 +1,117 @@
+ul {
+    list-style: none;
+}
+
+.navbar-nav {
+    gap: .5em;
+}
+
+.sub-menu1 {
+    display: none;
+    margin-top: .7em;
+    margin-left: .5em;
+    z-index: 2;
+    position: absolute;
+    padding: 0;
+    width: 200px;
+}
+
+.navbar-nav:hover~.sub-menu1 {
+    display: block;
+
+}
+
+/* 
+.drop:focus ~ .sub-menu1  {
+    display: block;
+    
+}
+.sub-menu1:hover{
+    
+    display: block;
+} */
+*::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+
+}
+
+*::-webkit-scrollbar-track {
+
+    background-color: #ffabab;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #6b4646;
+    border-radius: 40px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+
+    background-color: #4b3434;
+
+}
+
+.menu-section .sub-menu {
+    width: 70%;
+    position: absolute;
+    top: 5em;
+    background-color: white;
+    color: grey;
+    display: none;
+    z-index: 10;
+}
+
+
+
+
+div.login-menu {
+    display: none;
+    position: absolute;
+}
+
+img.banner-img {
+    width: 80vw;
+    max-width: 980px;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+
+}
+
+.form-navbar {
+    display: flex;
+    align-items: baseline;
+}
+
+.card-img-top {
+    background-color: #eee;
+    max-height: 8em;
+    min-height: 8em;
+}
+
+@media only screen and (min-width:900px) {
+    .input-search {
+        width: 700px;
+    }
+
+    .fa-bars::before {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:760px) {
+    .input-search {
+        width: 40vw;
+    }
+
+    .account-section {
+        display: none;
+    }
+
+    .menu-icon::before {
+        display: none;
+    }
+}
